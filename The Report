@@ -1,0 +1,8 @@
+Question link:
+
+https://www.hackerrank.com/challenges/the-report/problem?isFullScreen=true
+
+Solution:
+
+select name,grade,marks from students join grades on marks between min_mark and max_mark where grade>7 order by grade desc,name asc;
+select null,grade,marks from students join grades on marks between min_mark and max_mark where grade<=7 order by grade desc,marks asc;
